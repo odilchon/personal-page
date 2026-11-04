@@ -1,0 +1,218 @@
+{
+  "nav": [
+    "Home",
+    "About",
+    "Medical Services",
+    "Team",
+    "Contact"
+  ],
+  "book": "Book an appointment",
+  "call": "Call the clinic",
+  "menu": "Menu",
+  "close": "Close",
+  "skip": "Skip to content",
+  "eyebrow": "FAMILY MEDICAL CENTRE · BISHKEK",
+  "hero": [
+    "Care for your family.",
+    "Grounded in evidence."
+  ],
+  "intro": "Local and international specialists, working together for children and adults. Thoughtful care, in one place.",
+  "explore": "Explore our services",
+  "draft": "Draft message · awaiting clinic approval",
+  "prototype": "Student prototype · Booking and calls are not connected.",
+  "review": "",
+  "photo": "Photo: awaiting MercyMed approval",
+  "bio": "Bio: awaiting client confirmation",
+  "photoTitle": "A place for the whole family",
+  "photoSub": "Approved clinic photography will appear here.",
+  "principles": [
+    [
+      "01",
+      "The whole family",
+      "From pregnancy and childhood to adult care."
+    ],
+    [
+      "02",
+      "Evidence-based medicine",
+      "Decisions guided by modern medical research."
+    ],
+    [
+      "03",
+      "International experience",
+      "Local knowledge and international expertise, together."
+    ]
+  ],
+  "servicesTitle": "The right place to begin.",
+  "servicesIntro": "Start with a doctor’s consultation. Your doctor helps you decide which examinations are appropriate.",
+  "allServices": "All medical services",
+  "services": [
+    [
+      "Family medicine",
+      "Consultations for adults, children, teenagers and pregnant patients."
+    ],
+    [
+      "Pediatrics",
+      "Consultations for children, including growth and development check-ups."
+    ],
+    [
+      "Gynecology",
+      "Gynecology consultations as part of care for the whole family."
+    ],
+    [
+      "Pulmonology",
+      "Consultations for respiratory health."
+    ],
+    [
+      "Preventive check-ups",
+      "Growth and development, vision screening, EKG, anemia and diabetes screening, and laboratory tests."
+    ],
+    [
+      "Medical documents",
+      "Documents and certificates for school, flights, travel, employment and insurance. Confirm availability with the clinic."
+    ]
+  ],
+  "additionalTitle": "More care, in one place.",
+  "additional": [
+    [
+      "Diagnostics",
+      "Ultrasound, EKG, vision testing and audiometry."
+    ],
+    [
+      "Laboratory tests on site",
+      "Partner laboratory Express Plus. A 30% discount for MercyMed patients was stated in the client presentation; terms await clinic review."
+    ],
+    [
+      "Birth preparation",
+      "Birth-preparation courses with the clinic’s certified doula."
+    ]
+  ],
+  "languageTitle": "A conversation in your language.",
+  "languages": "Consultations and reports in Kyrgyz, Russian, English, Chinese, German and French. Ask reception which clinician and language are available for your visit.",
+  "aboutTitle": "Medicine with a charitable heart.",
+  "aboutIntro": "MercyMed is a private outpatient medical centre in Bishkek. Our approach brings modern medical knowledge and international experience together with compassionate care.",
+  "aboutText": "We care for the whole family in one place and aim to limit unnecessary investigations. Evidence-based medicine means using medical research to guide diagnosis and treatment, alongside the needs of each patient.",
+  "history": [
+    [
+      "10+ years",
+      "Mobile clinics in the regions of Kyrgyzstan."
+    ],
+    [
+      "October 2023",
+      "The Bishkek clinic opened to continue and expand this work."
+    ],
+    [
+      "Today",
+      "Local and international specialists care for families together."
+    ]
+  ],
+  "outreachTitle": "Beyond the clinic walls.",
+  "outreach": "Mobile clinics are at the heart of MercyMed. Teams travel to invited communities in the regions to provide consultations and medical support.",
+  "educationTitle": "Sharing knowledge.",
+  "education": "MercyMed provides training for doctors and medical students. Hospitals, medical schools and training partners can contact the clinic to discuss collaboration.",
+  "orgTitle": "For organisations.",
+  "orgText": "Yearly staff check-ups and special student arrangements for schools, companies and embassies. Discuss the needs of your organisation with the clinic.",
+  "orgButton": "Discuss a partnership",
+  "aboutLink": "Get to know MercyMed",
+  "teamTitle": "People behind the care.",
+  "teamIntro": "Meet the ten team members listed in the client presentation, including our director, doula and physical therapist. Current roles, photographs and short biographies await clinic approval.",
+  "teamLink": "Meet the team",
+  "contactTitle": "Let’s find your next step.",
+  "contactIntro": "Reception will help you choose a suitable doctor and discuss appointment availability. This classroom prototype does not contact the clinic.",
+  "locationTitle": "Find MercyMed",
+  "location": "Bishkek · Tunguch microdistrict, near Ayu Grand",
+  "address": "Exact street address and map pin: awaiting client confirmation.",
+  "hoursTitle": "Opening hours",
+  "hours": "Awaiting client confirmation.",
+  "contactsTitle": "Contact details",
+  "contacts": "WhatsApp, phone and email: awaiting client confirmation.",
+  "map": "Map pin awaiting confirmation",
+  "socialTitle": "Stay connected",
+  "socialText": "Official Instagram, 2GIS and O-Doctor profile links await confirmation.",
+  "pending": "Profile link awaiting client confirmation.",
+  "ctaTitle": "Your family. One place for care.",
+  "ctaText": "Begin with a consultation. Reception can guide you to the right member of our team.",
+  "dialogTitle": "Prototype — not connected",
+  "dialogText": "The official contact number is awaiting client confirmation. No call, booking or message will be sent. Do not enter personal or medical information.",
+  "messageLabel": "Example WhatsApp message · blank fields only",
+  "message": "Hello MercyMed, I would like to request an appointment.\nFirst name: [not entered]\nSurname: [not entered]\nDate of birth: [not entered]\nContact number: [not entered]",
+  "footer": "Evidence-based care for the whole family.",
+  "privacy": "Classroom prototype. No patient data, forms, payments, analytics or medical-record access.",
+  "faqTitle": "Before your visit",
+  "faq": [
+    [
+      "Can I book on this website?",
+      "This is a demonstration. Booking and call buttons show a notice. They do not send requests."
+    ],
+    [
+      "Do I need a specific doctor?",
+      "You can request a general consultation. Reception helps identify a suitable doctor according to your needs and availability."
+    ],
+    [
+      "Can I be seen in English?",
+      "English is among the consultation languages stated by the clinic. Confirm clinician availability with reception."
+    ]
+  ],
+  "team": [
+    {
+      "name": "MAHABAT ALIEVA",
+      "role": "Director / Doula",
+      "bio": "Bio: awaiting client confirmation",
+      "photo": null
+    },
+    {
+      "name": "JONATHAN WILLIAMS",
+      "role": "Chief doctor / Pediatrics",
+      "bio": "Bio: awaiting client confirmation",
+      "photo": null
+    },
+    {
+      "name": "IRINA PAK",
+      "role": "Pediatrics / Family medicine",
+      "bio": "Bio: awaiting client confirmation",
+      "photo": null
+    },
+    {
+      "name": "NASYIKAT DONONBAEVA",
+      "role": "Internal medicine / Pulmonology",
+      "bio": "Bio: awaiting client confirmation",
+      "photo": null
+    },
+    {
+      "name": "NABAT GASIMOVA",
+      "role": "Pediatric / Intensivist",
+      "bio": "Bio: awaiting client confirmation",
+      "photo": null
+    },
+    {
+      "name": "NANCY YAU",
+      "role": "Pediatrics",
+      "bio": "Bio: awaiting client confirmation",
+      "photo": null
+    },
+    {
+      "name": "LUKAS MEYER-LANDHOLT",
+      "role": "Pediatrics / Oncology",
+      "bio": "Bio: awaiting client confirmation",
+      "photo": null
+    },
+    {
+      "name": "MADISON SMITH",
+      "role": "Physical therapist",
+      "bio": "Bio: awaiting client confirmation",
+      "photo": null
+    },
+    {
+      "name": "SIMBAT SADYRBAEVA",
+      "role": "Gynecology",
+      "bio": "Bio: awaiting client confirmation",
+      "photo": null
+    },
+    {
+      "name": "NARGIZA ISLAMOVA",
+      "role": "Ultrasound",
+      "bio": "Bio: awaiting client confirmation",
+      "photo": null
+    }
+  ],
+  "promotion": null
+}
