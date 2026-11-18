@@ -1,0 +1,282 @@
+{
+  "nav": [
+    "Home",
+    "About",
+    "Medical Services",
+    "Team",
+    "Contact"
+  ],
+  "book": "Book an appointment",
+  "call": "Call the clinic",
+  "menu": "Menu",
+  "close": "Close",
+  "skip": "Skip to content",
+  "eyebrow": "FAMILY MEDICAL CENTRE · BISHKEK",
+  "hero": [
+    "Evidence-based care",
+    "for the whole family, in one place."
+  ],
+  "intro": "At our family medical centre in Bishkek, local and international specialists see children, teenagers, adults and expecting parents.",
+  "explore": "Explore our services",
+  "draft": "Draft message · awaiting clinic approval",
+  "review": "",
+  "principles": [
+    [
+      "01",
+      "The whole family",
+      "From pregnancy and childhood to adult care."
+    ],
+    [
+      "02",
+      "Evidence-based medicine",
+      "Decisions guided by modern medical research."
+    ],
+    [
+      "03",
+      "International experience",
+      "Local knowledge and international expertise, together."
+    ]
+  ],
+  "servicesTitle": "The right place to begin.",
+  "servicesIntro": "Start with a doctor’s consultation. Your doctor helps you decide which examinations are appropriate.",
+  "allServices": "All medical services",
+  "services": [
+    [
+      "Family medicine",
+      "Consultations for adults, children, teenagers and pregnant patients."
+    ],
+    [
+      "Pediatrics",
+      "Consultations for children, including growth and development check-ups."
+    ],
+    [
+      "Gynecology",
+      "Gynecology consultations as part of care for the whole family."
+    ],
+    [
+      "Pulmonology",
+      "Consultations for respiratory health."
+    ],
+    [
+      "Preventive check-ups",
+      "Growth and development, vision screening, EKG, anemia and diabetes screening, and laboratory tests."
+    ],
+    [
+      "Medical documents",
+      "Documents and certificates for school, flights, travel, employment and insurance. Confirm availability with the clinic."
+    ]
+  ],
+  "additionalTitle": "More care, in one place.",
+  "additional": [
+    [
+      "Diagnostics",
+      "Ultrasound, EKG, vision testing and audiometry."
+    ],
+    [
+      "Laboratory tests on site",
+      "On-site testing with our partner laboratory, Express Plus. MercyMed patients can ask about a 30% discount on lab tests.",
+      "Discount terms awaiting clinic confirmation"
+    ],
+    [
+      "Birth preparation",
+      "Birth-preparation courses with the clinic’s certified doula."
+    ]
+  ],
+  "languageTitle": "A conversation in your language.",
+  "languages": "Consultations and reports in Kyrgyz, Russian, English, Chinese, German and French. Ask reception which clinician and language are available for your visit.",
+  "aboutTitle": "Medicine with a charitable heart.",
+  "aboutIntro": "MercyMed is a private outpatient medical centre in Bishkek. Our approach brings modern medical knowledge and international experience together with compassionate care.",
+  "aboutText": "We care for the whole family in one place and aim to limit unnecessary investigations. Evidence-based medicine means using medical research to guide diagnosis and treatment, alongside the needs of each patient.",
+  "history": [
+    [
+      "10+ years",
+      "Mobile clinics in the regions of Kyrgyzstan."
+    ],
+    [
+      "October 2023",
+      "The Bishkek clinic opened to continue and expand this work."
+    ],
+    [
+      "Today",
+      "Local and international specialists care for families together."
+    ]
+  ],
+  "aboutLink": "Get to know MercyMed",
+  "teamIntro": "Meet the local and international team caring for families in Bishkek, from our doctors to our doula and physical therapist.",
+  "teamLink": "Meet the team",
+  "contactTitle": "Let’s find your next step.",
+  "contactIntro": "Reception will help you choose a suitable doctor and discuss appointment availability. This classroom prototype does not contact the clinic.",
+  "locationTitle": "Find MercyMed",
+  "location": "Bishkek · Tunguch microdistrict, near Ayu Grand",
+  "address": "Exact street address and map pin: awaiting client confirmation.",
+  "hoursTitle": "Opening hours",
+  "hours": "Awaiting client confirmation.",
+  "contactsTitle": "Contact details",
+  "contacts": "WhatsApp, phone and email: awaiting client confirmation.",
+  "map": "Map pin awaiting confirmation",
+  "socialTitle": "Stay connected",
+  "socialText": "Official Instagram, 2GIS and O-Doctor profile links await confirmation.",
+  "pending": "Profile link awaiting client confirmation.",
+  "ctaTitle": "Your family. One place for care.",
+  "ctaText": "Begin with a consultation. Reception can guide you to the right member of our team.",
+  "dialogTitle": "Prototype — not connected",
+  "dialogText": "The official contact number is awaiting client confirmation. No call, booking or message will be sent. Do not enter personal or medical information.",
+  "messageLabel": "Example WhatsApp message · blank fields only",
+  "message": "Hello MercyMed, I would like to request an appointment.\nFirst name: [not entered]\nSurname: [not entered]\nDate of birth: [not entered]\nContact number: [not entered]",
+  "footer": "Evidence-based care for the whole family.",
+  "privacy": "Classroom prototype. No patient data, forms, payments, analytics or medical-record access.",
+  "faqTitle": "Before your visit",
+  "faq": [
+    [
+      "Can I book on this website?",
+      "This is a demonstration. Booking and call buttons show a notice. They do not send requests."
+    ],
+    [
+      "Do I need a specific doctor?",
+      "You can request a general consultation. Reception helps identify a suitable doctor according to your needs and availability."
+    ],
+    [
+      "Can I be seen in English?",
+      "English is among the consultation languages stated by the clinic. Confirm clinician availability with reception."
+    ]
+  ],
+  "team": [
+    {
+      "name": "MAHABAT ALIEVA",
+      "role": "Director / Doula",
+      "bio": null,
+      "photo": null
+    },
+    {
+      "name": "JONATHAN WILLIAMS",
+      "role": "Chief doctor / Pediatrics",
+      "bio": null,
+      "photo": null
+    },
+    {
+      "name": "IRINA PAK",
+      "role": "Pediatrics / Family medicine",
+      "bio": null,
+      "photo": null
+    },
+    {
+      "name": "NASYIKAT DONONBAEVA",
+      "role": "Internal medicine / Pulmonology",
+      "bio": null,
+      "photo": null
+    },
+    {
+      "name": "NABAT GASIMOVA",
+      "role": "Pediatric / Intensivist",
+      "bio": null,
+      "photo": null
+    },
+    {
+      "name": "NANCY YAU",
+      "role": "Pediatrics",
+      "bio": null,
+      "photo": null
+    },
+    {
+      "name": "LUKAS MEYER-LANDHOLT",
+      "role": "Pediatrics / Oncology",
+      "bio": null,
+      "photo": null
+    },
+    {
+      "name": "MADISON SMITH",
+      "role": "Physical therapist",
+      "bio": null,
+      "photo": null
+    },
+    {
+      "name": "SIMBAT SADYRBAEVA",
+      "role": "Gynecology",
+      "bio": null,
+      "photo": null
+    },
+    {
+      "name": "NARGIZA ISLAMOVA",
+      "role": "Ultrasound",
+      "bio": null,
+      "photo": null
+    }
+  ],
+  "promotion": null,
+  "visitTitle": "Planning your first visit?",
+  "visitText": "Start with a consultation. Reception can help you choose a doctor, and your doctor can advise you on any tests you may need.",
+  "visitLink": "Before your visit",
+  "programsTitle": "MercyMed in the community",
+  "learnMore": "Learn more",
+  "languagesLabel": "Site language",
+  "footerNav": "Footer navigation",
+  "teamStatus": "Photos and short biographies are awaiting clinic approval.",
+  "partnershipNotice": "This prototype does not send partnership inquiries. The official contact details are awaiting clinic confirmation.",
+  "programs": {
+    "corporate": {
+      "name": "For Corporate Clients",
+      "summary": "Annual staff check-ups and special arrangements for students.",
+      "intro": "MercyMed works with companies, schools and embassies that need a clinic for regular medical examinations in Bishkek.",
+      "topics": [
+        [
+          "Annual staff check-ups",
+          "Discuss yearly examinations for employees. The clinic can clarify which examinations and medical documents are appropriate for your organisation."
+        ],
+        [
+          "Arrangements for students",
+          "Schools can ask about special arrangements for students and the availability of certificates for school. Confirm eligibility and terms with the clinic."
+        ],
+        [
+          "Planning a partnership",
+          "When discussing a partnership, explain who needs examinations, the approximate group size, your timetable and any report or language requirements."
+        ]
+      ],
+      "action": "Discuss a partnership"
+    },
+    "education": {
+      "name": "Medical Education",
+      "summary": "Training and collaboration for doctors, students and residents.",
+      "intro": "MercyMed provides training in evidence-based practice as part of its work at the family medical centre in Bishkek.",
+      "topics": [
+        [
+          "Learning from one another",
+          "Local and international doctors share their experience. The exchange brings together evidence from medical research and knowledge of the local healthcare system."
+        ],
+        [
+          "Students and residents",
+          "MercyMed has previously hosted medical students for visits lasting several weeks. The team is open to discussing future opportunities for residents with training institutions."
+        ],
+        [
+          "Working with your institution",
+          "Hospitals and medical schools can discuss training goals, learner level and timing with the clinic. Confirm availability and arrangements before making plans."
+        ]
+      ],
+      "action": "Discuss medical training"
+    },
+    "mobile-clinics": {
+      "name": "Mobile Clinics",
+      "summary": "Outreach and charitable work in the regions of Kyrgyzstan.",
+      "intro": "For more than ten years, MercyMed has provided medical consultations in the regions of Kyrgyzstan. The Bishkek clinic opened in October 2023 to continue and expand this work.",
+      "topics": [
+        [
+          "Where we go",
+          "The team travels to communities that invite it. A local health centre or another community host helps find a place for consultations."
+        ],
+        [
+          "What a visit looks like",
+          "The visiting team can include doctors, a nurse and support staff. They bring medicines and some laboratory tests. Visits can last one or several days, depending on local arrangements."
+        ],
+        [
+          "Inviting the team",
+          "Community hosts can tell MercyMed where they are based, what kind of support is needed and where consultations could take place. The team can discuss what is possible."
+        ]
+      ],
+      "action": "Discuss a mobile clinic visit"
+    }
+  },
+  "aboutLabel": "About us",
+  "partners": {
+    "name": "Business and Partnerships",
+    "summary": "Medical check-ups for organisations and mobile consultations across Kyrgyzstan."
+  }
+}
