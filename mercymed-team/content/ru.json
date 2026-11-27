@@ -18,8 +18,6 @@
   ],
   "intro": "В нашем семейном медицинском центре в Бишкеке местные и международные специалисты принимают детей, подростков, взрослых и беременных.",
   "explore": "Посмотреть услуги",
-  "draft": "Черновик текста · ожидает одобрения клиники",
-  "review": "Перевод ожидает проверки клиникой",
   "principles": [
     [
       "01",
@@ -104,18 +102,14 @@
   "aboutLink": "Познакомиться с MercyMed",
   "teamIntro": "Познакомьтесь с местными и международными специалистами, которые помогают семьям в Бишкеке. В команде работают врачи, доула и физиотерапевт.",
   "teamLink": "Наша команда",
-  "contactTitle": "Начнём с простого шага.",
-  "contactIntro": "Администратор поможет выбрать подходящего врача и уточнить время приёма. Этот учебный прототип не связывается с клиникой.",
+  "contactTitle": "Свяжитесь с нами",
+  "contactIntro": "Посмотрите, где находится клиника, как до неё добраться и как записаться на приём.",
   "locationTitle": "Где находится MercyMed",
   "location": "Бишкек · микрорайон Тунгуч, рядом с Ayu Grand",
-  "address": "Точный адрес и точка на карте: ожидают подтверждения клиники.",
   "hoursTitle": "Часы работы",
   "hours": "Ожидают подтверждения клиники.",
-  "contactsTitle": "Контактные данные",
-  "contacts": "WhatsApp, телефон и email: ожидают подтверждения клиники.",
   "map": "Точка на карте ожидает подтверждения",
   "socialTitle": "Оставайтесь на связи",
-  "socialText": "Официальные ссылки на Instagram, 2GIS и O-Doctor ожидают подтверждения.",
   "pending": "Ссылка на профиль ожидает подтверждения клиники.",
   "ctaTitle": "Ваша семья. Забота в одном месте.",
   "ctaText": "Начните с консультации. Администратор поможет выбрать подходящего специалиста.",
@@ -145,61 +139,62 @@
       "name": "MAHABAT ALIEVA",
       "role": "Директор / Доула",
       "bio": null,
-      "photo": null
+      "photo": "assets/photos/mahabat-alieva.jpg"
     },
     {
       "name": "JONATHAN WILLIAMS",
       "role": "Главный врач / Педиатрия",
       "bio": null,
-      "photo": null
+      "photo": "assets/photos/jonathan-williams.jpg"
     },
     {
       "name": "IRINA PAK",
       "role": "Педиатрия / Семейная медицина",
       "bio": null,
-      "photo": null
+      "photo": "assets/photos/irina-pak.jpg"
     },
     {
       "name": "NASYIKAT DONONBAEVA",
       "role": "Терапия / Пульмонология",
       "bio": null,
-      "photo": null
+      "photo": "assets/photos/nasyikat-dononbaeva.jpg"
     },
     {
       "name": "NABAT GASIMOVA",
       "role": "Педиатр / Интенсивная терапия",
       "bio": null,
-      "photo": null
+      "photo": "assets/photos/nabat-gasimova.jpg"
     },
     {
       "name": "NANCY YAU",
       "role": "Педиатрия",
       "bio": null,
-      "photo": null
+      "photo": "assets/photos/nancy-yau.jpg"
     },
     {
       "name": "LUKAS MEYER-LANDHOLT",
       "role": "Педиатрия / Онкология",
       "bio": null,
-      "photo": null
+      "photo": "assets/photos/lukas-meyer-landholt.jpg"
     },
     {
       "name": "MADISON SMITH",
       "role": "Физиотерапевт",
       "bio": null,
-      "photo": null
+      "photo": "assets/photos/madison-smith.jpg"
     },
     {
       "name": "SIMBAT SADYRBAEVA",
       "role": "Гинекология",
       "bio": null,
-      "photo": null
+      "photo": "assets/photos/simbat-sadyrbaeva.jpg"
     },
     {
       "name": "NARGIZA ISLAMOVA",
       "role": "УЗИ",
       "bio": null,
-      "photo": null
+      "photo": "assets/photos/ultrasound.jpg",
+      "photoAlt": "Аппарат УЗИ"
     }
   ],
   "promotion": null,
@@ -210,7 +205,6 @@
   "learnMore": "Подробнее",
   "languagesLabel": "Язык сайта",
   "footerNav": "Навигация внизу страницы",
-  "teamStatus": "Фотографии и краткие биографии ожидают одобрения клиники.",
   "partnershipNotice": "Учебный сайт не отправляет запросы о сотрудничестве. Официальные контакты ожидают подтверждения клиники.",
   "programs": {
     "corporate": {
@@ -251,7 +245,9 @@
           "Больницы и медицинские вузы могут обсудить с клиникой цели обучения, уровень подготовки участников и сроки. Возможность и условия участия уточняются заранее."
         ]
       ],
-      "action": "Обсудить обучение"
+      "action": "Обсудить обучение",
+      "audience": "Для студентов-медиков, ординаторов, врачей, больниц и медицинских вузов, которым интересно обучение или сотрудничество.",
+      "inquiry": "Чтобы обсудить обучение, укажите свою специальность или курс, организацию, цель визита и удобные даты. Уточните у MercyMed, возможен ли визит и на каких условиях."
     },
     "mobile-clinics": {
       "name": "Выездные клиники",
@@ -278,5 +274,18 @@
   "partners": {
     "name": "Бизнесу и партнёрам",
     "summary": "Медицинские осмотры для организаций и выездные консультации в регионах Кыргызстана."
+  },
+  "contactDetails": {
+    "street": "Улица Исакеева, микрорайон Тунгуч, Бишкек",
+    "addressNote": "Номер здания и вход уточняются у клиники.",
+    "phoneLabel": "Телефон клиники",
+    "copy": "Копировать",
+    "copied": "Номер скопирован.",
+    "copyFailed": "Выделите номер, чтобы скопировать его.",
+    "mapLink": "Открыть MercyMed на карте",
+    "directions": "Контакты и как добраться",
+    "bookingNote": "Администратор поможет выбрать врача и подобрать время. Кнопки ниже показывают, как будет работать запись.",
+    "addressLabel": "Адрес",
+    "bookingTitle": "Запись на приём"
   }
 }

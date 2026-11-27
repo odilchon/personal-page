@@ -18,8 +18,6 @@
   ],
   "intro": "At our family medical centre in Bishkek, local and international specialists see children, teenagers, adults and expecting parents.",
   "explore": "Explore our services",
-  "draft": "Draft message · awaiting clinic approval",
-  "review": "",
   "principles": [
     [
       "01",
@@ -104,18 +102,14 @@
   "aboutLink": "Get to know MercyMed",
   "teamIntro": "Meet the local and international team caring for families in Bishkek, from our doctors to our doula and physical therapist.",
   "teamLink": "Meet the team",
-  "contactTitle": "Let’s find your next step.",
-  "contactIntro": "Reception will help you choose a suitable doctor and discuss appointment availability. This classroom prototype does not contact the clinic.",
+  "contactTitle": "Visit or contact MercyMed",
+  "contactIntro": "Find the clinic, check how to get there, or see how to request an appointment.",
   "locationTitle": "Find MercyMed",
   "location": "Bishkek · Tunguch microdistrict, near Ayu Grand",
-  "address": "Exact street address and map pin: awaiting client confirmation.",
   "hoursTitle": "Opening hours",
   "hours": "Awaiting client confirmation.",
-  "contactsTitle": "Contact details",
-  "contacts": "WhatsApp, phone and email: awaiting client confirmation.",
   "map": "Map pin awaiting confirmation",
   "socialTitle": "Stay connected",
-  "socialText": "Official Instagram, 2GIS and O-Doctor profile links await confirmation.",
   "pending": "Profile link awaiting client confirmation.",
   "ctaTitle": "Your family. One place for care.",
   "ctaText": "Begin with a consultation. Reception can guide you to the right member of our team.",
@@ -145,61 +139,62 @@
       "name": "MAHABAT ALIEVA",
       "role": "Director / Doula",
       "bio": null,
-      "photo": null
+      "photo": "assets/photos/mahabat-alieva.jpg"
     },
     {
       "name": "JONATHAN WILLIAMS",
       "role": "Chief doctor / Pediatrics",
       "bio": null,
-      "photo": null
+      "photo": "assets/photos/jonathan-williams.jpg"
     },
     {
       "name": "IRINA PAK",
       "role": "Pediatrics / Family medicine",
       "bio": null,
-      "photo": null
+      "photo": "assets/photos/irina-pak.jpg"
     },
     {
       "name": "NASYIKAT DONONBAEVA",
       "role": "Internal medicine / Pulmonology",
       "bio": null,
-      "photo": null
+      "photo": "assets/photos/nasyikat-dononbaeva.jpg"
     },
     {
       "name": "NABAT GASIMOVA",
       "role": "Pediatric / Intensivist",
       "bio": null,
-      "photo": null
+      "photo": "assets/photos/nabat-gasimova.jpg"
     },
     {
       "name": "NANCY YAU",
       "role": "Pediatrics",
       "bio": null,
-      "photo": null
+      "photo": "assets/photos/nancy-yau.jpg"
     },
     {
       "name": "LUKAS MEYER-LANDHOLT",
       "role": "Pediatrics / Oncology",
       "bio": null,
-      "photo": null
+      "photo": "assets/photos/lukas-meyer-landholt.jpg"
     },
     {
       "name": "MADISON SMITH",
       "role": "Physical therapist",
       "bio": null,
-      "photo": null
+      "photo": "assets/photos/madison-smith.jpg"
     },
     {
       "name": "SIMBAT SADYRBAEVA",
       "role": "Gynecology",
       "bio": null,
-      "photo": null
+      "photo": "assets/photos/simbat-sadyrbaeva.jpg"
     },
     {
       "name": "NARGIZA ISLAMOVA",
       "role": "Ultrasound",
       "bio": null,
-      "photo": null
+      "photo": "assets/photos/ultrasound.jpg",
+      "photoAlt": "Ultrasound equipment"
     }
   ],
   "promotion": null,
@@ -210,7 +205,6 @@
   "learnMore": "Learn more",
   "languagesLabel": "Site language",
   "footerNav": "Footer navigation",
-  "teamStatus": "Photos and short biographies are awaiting clinic approval.",
   "partnershipNotice": "This prototype does not send partnership inquiries. The official contact details are awaiting clinic confirmation.",
   "programs": {
     "corporate": {
@@ -251,7 +245,9 @@
           "Hospitals and medical schools can discuss training goals, learner level and timing with the clinic. Confirm availability and arrangements before making plans."
         ]
       ],
-      "action": "Discuss medical training"
+      "action": "Discuss medical training",
+      "audience": "For medical students, residents, doctors, hospitals and medical schools interested in training or collaboration.",
+      "inquiry": "For a training inquiry, include your role, institution, what you’d like to learn and your preferred dates. Check availability and arrangements with MercyMed before making plans."
     },
     "mobile-clinics": {
       "name": "Mobile Clinics",
@@ -278,5 +274,18 @@
   "partners": {
     "name": "Business and Partnerships",
     "summary": "Medical check-ups for organisations and mobile consultations across Kyrgyzstan."
+  },
+  "contactDetails": {
+    "street": "Isakeev Street, Tunguch, Bishkek",
+    "addressNote": "The building number and entrance are awaiting clinic confirmation.",
+    "phoneLabel": "Clinic phone",
+    "copy": "Copy",
+    "copied": "Number copied.",
+    "copyFailed": "Select the number above to copy it.",
+    "mapLink": "Find MercyMed on the map",
+    "directions": "Contact and directions",
+    "bookingNote": "Reception helps you choose a doctor and find an available time. The buttons below demonstrate how appointment requests work.",
+    "addressLabel": "Address",
+    "bookingTitle": "Appointments"
   }
 }
