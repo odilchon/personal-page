@@ -357,15 +357,21 @@
         observer.unobserve(target);
         if (!reducedMotion.matches) {
           target.animate([
-            { opacity: .78, transform: 'translateY(8px)' },
+            { opacity: .64, transform: 'translateY(12px)' },
             { opacity: 1, transform: 'none' }
-          ], { duration: 280, easing: 'ease-out' });
+          ], { duration: 420, easing: 'ease-out' });
         }
       }
-    }, { rootMargin: '0px 0px -24px', threshold: 0.05 });
-    document.querySelectorAll('.section, .about-care, .timeline, .language-block, .staff-card, .cta')
+    }, { rootMargin: '0px 0px -18px' });
+    const revealTargets = [
+      '.principles > article', '.programs .card', '.service-preview .card', '.faq details',
+      '.about-care', '.timeline > article', '.partner-section .program-topics li',
+      '#education .program-topics li', '.program-contact', '.language-block', '.staff-card',
+      '.contact-booking', '.contact-profiles', '.feature', '.cta'
+    ];
+    document.querySelectorAll(revealTargets.join(', '))
       .forEach(element => {
-        if (element.getBoundingClientRect().top >= innerHeight) reveal.observe(element);
+        if (element.getBoundingClientRect().top >= innerHeight - 18) reveal.observe(element);
       });
   }
 })().catch(error => {

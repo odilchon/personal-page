@@ -130,8 +130,10 @@ main, footer { padding-inline: var(--edge); }
 .button span, .text-link span { flex: none; }
 .primary { color: var(--ink); background: var(--orange); }
 .primary:hover, .primary:active { box-shadow: inset 0 0 0 2px var(--ink); }
-.booking-button { background: var(--red); color: var(--white); }
-.booking-button:hover, .booking-button:active { background: #b7151c; box-shadow: none; }
+.header-book .booking-button { background: var(--red); color: var(--white); }
+.header-book .booking-button:hover, .header-book .booking-button:active { background: #b7151c; box-shadow: none; }
+.contact-booking .booking-button { background: #18804b; color: var(--white); }
+.contact-booking .booking-button:hover, .contact-booking .booking-button:active { background: #12643a; box-shadow: none; }
 .secondary { border-color: var(--line); background: var(--white); }
 .secondary:hover { border-color: var(--ink); background: var(--grey); }
 .plain { background: transparent; padding-inline: 5px; text-decoration: underline; text-underline-offset: .3em; }
@@ -292,7 +294,13 @@ main, footer { padding-inline: var(--edge); }
 .program-detail { margin-top: 24px; }
 .program-detail + .program-detail { border-top: 1px solid var(--line); padding-top: 28px; margin-top: 30px; }
 .program-detail > h3 { font-size: clamp(23px, 2.4vw, 31px); }
-.partner-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 18px; }
+.partner-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: clamp(20px, 3vw, 38px);
+  margin-top: 22px;
+}
 .partner-section {
   padding: clamp(16px, 2.5vw, 28px);
   border: 1px solid var(--line);
@@ -300,6 +308,19 @@ main, footer { padding-inline: var(--edge); }
   border-radius: var(--radius);
 }
 .partner-section > h4 { font-size: 21px; }
+.partner-section .program-topics {
+  display: grid;
+  gap: 14px;
+  margin-top: 20px;
+}
+.partner-section .program-topics li {
+  margin: 0;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--grey);
+}
+.partner-section .program-topics p { margin-top: 8px; }
 .program-topics { margin-top: 16px; }
 .program-topics li { border-top: 1px solid var(--line); padding-top: 12px; }
 .program-topics li + li { margin-top: 12px; }
