@@ -81,10 +81,10 @@
     ]
   ],
   "languageTitle": "A conversation in your language.",
-  "languages": "Consultations and reports in Kyrgyz, Russian, English, Chinese, German and French. Ask reception which clinician and language are available for your visit.",
+  "languages": "Consultations and written reports are available in these languages. Ask reception which clinicians are available in your preferred language when you book.",
   "aboutTitle": "Medicine with a charitable heart.",
   "aboutIntro": "MercyMed is a private outpatient medical centre in Bishkek. Our approach brings modern medical knowledge and international experience together with compassionate care.",
-  "aboutText": "We care for the whole family in one place and aim to limit unnecessary investigations. Evidence-based medicine means using medical research to guide diagnosis and treatment, alongside the needs of each patient.",
+  "aboutText": "MercyMed doctors use current research and consider each patient’s circumstances. Local and international clinicians discuss how to apply what they learn within Kyrgyzstan’s healthcare system.",
   "history": [
     [
       "10+ years",
@@ -113,17 +113,13 @@
   "pending": "Profile link awaiting client confirmation.",
   "ctaTitle": "Your family. One place for care.",
   "ctaText": "Begin with a consultation. Reception can guide you to the right member of our team.",
-  "dialogTitle": "Prototype — not connected",
-  "dialogText": "The official contact number is awaiting client confirmation. No call, booking or message will be sent. Do not enter personal or medical information.",
-  "messageLabel": "Example WhatsApp message · blank fields only",
-  "message": "Hello MercyMed, I would like to request an appointment.\nFirst name: [not entered]\nSurname: [not entered]\nDate of birth: [not entered]\nContact number: [not entered]",
   "footer": "Evidence-based care for the whole family.",
   "privacy": "Classroom prototype. No patient data, forms, payments, analytics or medical-record access.",
   "faqTitle": "Before your visit",
   "faq": [
     [
-      "Can I book on this website?",
-      "This is a demonstration. Booking and call buttons show a notice. They do not send requests."
+      "How do I book an appointment?",
+      "Choose “Book an appointment,” then open WhatsApp from the booking dialog. Send your message to MercyMed reception to ask about availability."
     ],
     [
       "Do I need a specific doctor?",
@@ -205,7 +201,7 @@
   "learnMore": "Learn more",
   "languagesLabel": "Site language",
   "footerNav": "Footer navigation",
-  "partnershipNotice": "This prototype does not send partnership inquiries. The official contact details are awaiting clinic confirmation.",
+  "partnershipNotice": "Contact MercyMed reception if your organization needs check-ups or your community would like to host an outreach visit.",
   "programs": {
     "corporate": {
       "name": "For Corporate Clients",
@@ -252,7 +248,7 @@
     "mobile-clinics": {
       "name": "Mobile Clinics",
       "summary": "Outreach and charitable work in the regions of Kyrgyzstan.",
-      "intro": "For more than ten years, MercyMed has provided medical consultations in the regions of Kyrgyzstan. The Bishkek clinic opened in October 2023 to continue and expand this work.",
+      "intro": "MercyMed provides outreach consultations in the regions of Kyrgyzstan with local hosts.",
       "topics": [
         [
           "Where we go",
@@ -278,14 +274,34 @@
   "contactDetails": {
     "street": "Isakeev Street, Tunguch, Bishkek",
     "addressNote": "The building number and entrance are awaiting clinic confirmation.",
-    "phoneLabel": "Clinic phone",
+    "phoneLabel": "Phone and WhatsApp",
     "copy": "Copy",
     "copied": "Number copied.",
     "copyFailed": "Select the number above to copy it.",
     "mapLink": "Find MercyMed on the map",
     "directions": "Contact and directions",
-    "bookingNote": "Reception helps you choose a doctor and find an available time. The buttons below demonstrate how appointment requests work.",
+    "bookingNote": "Message reception on WhatsApp to choose a clinician and ask about availability. Reception will confirm your appointment time.",
     "addressLabel": "Address",
     "bookingTitle": "Appointments"
+  },
+  "aboutContext": "The clinic cares for children and adults. You can start with a general consultation or browse the services and specialists before your visit.",
+  "carePoints": [
+    [
+      "Tests with a clear purpose",
+      "Your doctor considers which tests can clarify your situation and inform the next decision."
+    ],
+    [
+      "Treatment backed by evidence",
+      "The team aims to avoid medicines and procedures that are unlikely to benefit a patient."
+    ]
+  ],
+  "booking": {
+    "title": "Book via WhatsApp",
+    "description": "This opens a chat with MercyMed reception. You can edit the draft and send it in WhatsApp.",
+    "previewLabel": "Message draft",
+    "message": "Hello! I would like to book a consultation at MercyMed. Could you please let me know what times are available?",
+    "open": "Open WhatsApp",
+    "callTitle": "Call the clinic",
+    "callDescription": "This button shows a call demonstration. The clinic’s number and WhatsApp link are on the Contact page."
   }
 }

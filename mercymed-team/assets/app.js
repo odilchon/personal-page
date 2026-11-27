@@ -1,15 +1,17 @@
 (async () => {
   const { lang } = document.documentElement;
   const { page, base } = document.body.dataset;
-  const response = await fetch(base + 'content/' + lang + '.json?v=13');
+  const response = await fetch(base + 'content/' + lang + '.json?v=14');
   if (!response.ok) throw new Error('Content unavailable');
   const d = await response.json();
   const { corporate, education, 'mobile-clinics': mobileClinics } = d.programs;
   const clinicPhone = '+996 770 231 813';
+  const whatsappUrl = 'https://wa.me/' + clinicPhone.replace(/\D/g, '');
+  const bookingUrl = whatsappUrl + '?text=' + encodeURIComponent(d.booking.message);
   const mapUrl = 'https://yandex.com/maps/org/mercy_med/215676724008/';
-  const profiles = [
-    ['Instagram', 'https://www.instagram.com/mercymed.kg/'],
-    ['O-Doctor', 'https://odoctor.kg/clinics/bishkek/mercymed']
+  const consultationLanguages = [
+    ['ky', 'Кыргызча'], ['ru', 'Русский'], ['en', 'English'],
+    ['zh', '中文'], ['de', 'Deutsch'], ['fr', 'Français']
   ];
   const programPages = [['partners', d.partners], ['education', education]];
   const navItems = [
@@ -45,9 +47,29 @@
   }
   const current = target => target === page ? 'aria-current="page"' : '';
   const arrow = '<span aria-hidden="true">↗</span>';
+  const lineIcon = paths => `<svg class="line-icon" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+    aria-hidden="true">${paths}</svg>`;
+  const globe = lineIcon('<circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/>');
+  const check = lineIcon('<path d="m6 12 4 4 8-8"/>');
+  const whatsappIcon = `<svg class="brand-icon whatsapp-icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+    <path d="M12.04 0A11.9 11.9 0 0 0 1.72 17.85L.02 24l6.3-1.65a11.95 11.95 0 0 0 5.71 1.45h.01A11.9 11.9 0 0 0 12.04 0Zm0 21.8a9.88 9.88 0 0 1-5.04-1.38l-.36-.21-3.74.98 1-3.64-.24-.37a9.88 9.88 0 1 1 8.38 4.62Zm5.42-7.4c-.3-.15-1.76-.87-2.04-.97-.27-.1-.47-.15-.67.15s-.77.97-.94 1.16c-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.48-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.09 4.49.7.3 1.26.49 1.7.63.71.23 1.36.2 1.88.12.57-.08 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35Z"/>
+  </svg>`;
+  const instagramIcon = `<svg class="brand-icon instagram-icon" viewBox="0 0 24 24" aria-hidden="true"
+    fill="none" stroke="currentColor" stroke-width="1.8">
+    <rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/>
+    <circle cx="17.5" cy="6.7" r="1" fill="currentColor" stroke="none"/>
+  </svg>`;
+  const profiles = [
+    ['WhatsApp', whatsappUrl, whatsappIcon],
+    ['Instagram', 'https://www.instagram.com/mercymed.kg/', instagramIcon],
+    ['O-Doctor', 'https://odoctor.kg/clinics/bishkek/mercymed',
+      `<img class="brand-icon" src="${base}assets/odoctor.png" width="20" height="20" alt="">`]
+  ];
   const button = (label, action, style = 'primary') =>
     `<button type="button" class="button ${style}" data-action="${action}">${esc(label)} ${arrow}</button>`;
-  const book = (label = d.book) => button(label, 'book');
+  const book = (label = d.book, icon = arrow) =>
+    `<button type="button" class="button primary booking-button" data-action="book" aria-haspopup="dialog">${esc(label)} ${icon}</button>`;
   const link = (label, target, style = 'text-link') =>
     `<a class="${style}" href="${url(target)}">${esc(label)} ${arrow}</a>`;
   const logo = `<img src="${base}assets/mercymed-logo.png" alt="MercyMed" width="576" height="192">`;
@@ -100,19 +122,24 @@
         </article>`).join('')}</div>
     </section>`;
   const languagesInfo = () => `
-    <aside class="language-block"><h2>${esc(d.languageTitle)}</h2><p>${esc(d.languages)}</p></aside>`;
+    <section class="language-block">
+      <div class="language-intro"><span class="icon-tile">${globe}</span>
+        <div><h2>${esc(d.languageTitle)}</h2><p>${esc(d.languages)}</p></div>
+      </div>
+      <ul class="consultation-languages" role="list">${consultationLanguages.map(([language, name]) =>
+        `<li lang="${language}">${name}</li>`).join('')}</ul>
+    </section>`;
+  const topicList = (topics, heading = 'h4') => `
+    <ul class="program-topics" role="list">${topics.map(([title, copy]) => `
+      <li><${heading}>${esc(title)}</${heading}><p>${esc(copy)}</p></li>`).join('')}</ul>`;
   const partnerSection = (id, item) => `
-    <section class="partner-section section" id="${id}">
-      <h3>${esc(item.name)}</h3>
-      <p class="lead">${esc(item.intro)}</p>
-      <div class="cards">${item.topics.map(([title, copy]) => `
-        <article class="card"><h4>${esc(title)}</h4><p>${esc(copy)}</p></article>`).join('')}</div>
+    <section class="partner-section" id="${id}">
+      <h4>${esc(item.name)}</h4>
+      <p>${esc(item.intro)}</p>
+      ${topicList(item.topics, 'h5')}
     </section>`;
-  const partnershipContact = (title, copy) => `
-    <section class="feature program-contact">
-      <div><h3>${esc(title)}</h3><p>${esc(copy)}</p></div>
-      ${link(d.nav[4], 'contact', 'button primary')}
-    </section>`;
+  const programContact = (label, copy) => `
+    <div class="program-contact"><p>${esc(copy)}</p>${link(label, 'contact', 'button secondary')}</div>`;
   const teamSection = () => `
     <section class="team-section" aria-label="${esc(d.nav[3])}">
       <div class="team-grid">${d.team.map(person => `
@@ -164,28 +191,43 @@
       </section>
       ${cta()}`;
   } else if (page === 'about') {
+    const chiefDoctor = d.team.find(person => person.photo.endsWith('/jonathan-williams.jpg'));
     body = `
-      ${intro(d.aboutTitle, d.aboutIntro)}
+      <section class="about-hero">
+        <div>
+          <p class="eyebrow">${esc(d.eyebrow)}</p>
+          <h1>${esc(d.aboutTitle)}</h1>
+          <p class="lead">${esc(d.aboutIntro)}</p><p>${esc(d.aboutContext)}</p>
+          <div class="actions">${link(d.teamLink, 'team', 'button secondary')}</div>
+        </div>
+        <figure class="about-photo">
+          <img src="${base + esc(chiefDoctor.photo)}" alt="" width="414" height="438" fetchpriority="high">
+          <figcaption><strong>${esc(chiefDoctor.name)}</strong><span>${esc(chiefDoctor.role)}</span></figcaption>
+        </figure>
+      </section>
       <section class="about-care">
-        <h2>${esc(d.principles[1][1])}</h2><p>${esc(d.aboutText)}</p>${link(d.teamLink, 'team')}
+        <div><h2>${esc(d.principles[1][1])}</h2><p>${esc(d.aboutText)}</p></div>
+        <ul class="care-points" role="list">${d.carePoints.map(([title, copy]) => `
+          <li><span class="icon-tile">${check}</span><div><h3>${esc(title)}</h3><p>${esc(copy)}</p></div></li>`).join('')}</ul>
       </section>
       <div class="timeline">${d.history.map(([title, copy]) => `
         <article><h2>${esc(title)}</h2><p>${esc(copy)}</p></article>`).join('')}</div>
-      ${programGrid()}
-      <section class="section program-detail" id="partners">
-        <h2>${esc(d.partners.name)}</h2>
-        <p class="lead">${esc(d.partners.summary)}</p>
-        ${partnerSection('corporate', corporate)}
-        ${partnerSection('mobile-clinics', mobileClinics)}
-        ${partnershipContact(corporate.action, d.partnershipNotice)}
-      </section>
-      <section class="section program-detail" id="education">
-        <h2>${esc(education.name)}</h2>
-        <p class="lead">${esc(education.audience)}</p>
-        <p class="lead">${esc(education.intro)}</p>
-        <div class="program-topics">${education.topics.map(([title, copy]) => `
-          <section><h3>${esc(title)}</h3><p>${esc(copy)}</p></section>`).join('')}</div>
-        ${partnershipContact(education.action, education.inquiry)}
+      <section class="section about-programs">
+        <h2>${esc(d.programsTitle)}</h2>
+        <section class="program-detail" id="partners">
+          <h3>${esc(d.partners.name)}</h3>
+          <div class="partner-grid">
+            ${partnerSection('corporate', corporate)}
+            ${partnerSection('mobile-clinics', mobileClinics)}
+          </div>
+          ${programContact(corporate.action, d.partnershipNotice)}
+        </section>
+        <section class="program-detail" id="education">
+          <h3>${esc(education.name)}</h3>
+          <p class="lead">${esc(education.audience)}</p>
+          ${topicList(education.topics)}
+          ${programContact(education.action, education.inquiry)}
+        </section>
       </section>
       ${cta()}`;
   } else if (page === 'team') {
@@ -217,7 +259,7 @@
           </dl>
           <section class="contact-booking">
             <h2>${esc(c.bookingTitle)}</h2><p>${esc(c.bookingNote)}</p>
-            <div class="actions">${book()}${button(d.call, 'call', 'secondary')}</div>
+            <div class="actions">${book(d.booking.title, whatsappIcon)}${button(d.call, 'call', 'secondary')}</div>
           </section>
         </div>
         <div>
@@ -228,8 +270,8 @@
           </a>
           <section class="contact-profiles">
             <h2>${esc(d.socialTitle)}</h2>
-            <div class="socials">${profiles.map(([label, href]) =>
-              `<a class="button secondary" href="${href}">${label} ${arrow}</a>`).join('')}</div>
+            <div class="socials">${profiles.map(([label, href, icon]) =>
+              `<a class="button secondary" href="${href}">${icon} ${label}</a>`).join('')}</div>
           </section>
         </div>
       </div>`;
@@ -250,11 +292,15 @@
     <div class="footer-bottom"><span>© 2026 MercyMed · COM360</span><p>${esc(d.privacy)}</p></div>`;
 
   const dialog = document.querySelector('dialog');
+  const { booking } = d;
   dialog.innerHTML = `
     <button type="button" class="dialog-x" aria-label="${esc(d.close)}">×</button>
-    <h2 id="dialog-title">${esc(d.dialogTitle)}</h2><p id="dialog-desc"></p>
-    <div id="message"><p>${esc(d.messageLabel)}</p><pre>${esc(d.message)}</pre></div>
-    <button type="button" class="button primary dialog-close">${esc(d.close)}</button>`;
+    <h2 id="dialog-title"></h2><p id="dialog-desc"></p>
+    <div id="message"><strong>${esc(booking.previewLabel)}</strong><p>${esc(booking.message)}</p></div>
+    <div class="dialog-actions">
+      <button type="button" class="button secondary dialog-close" autofocus>${esc(d.close)}</button>
+      <a class="button primary booking-button" href="${bookingUrl}" id="open-whatsapp">${whatsappIcon} ${esc(booking.open)}</a>
+    </div>`;
   const menu = document.querySelector('.menu-button');
   const mobileNav = document.querySelector('#mobile-nav');
 
@@ -278,8 +324,11 @@
       }
       return;
     }
-    dialog.querySelector('#dialog-desc').textContent = d.dialogText;
-    dialog.querySelector('#message').hidden = action !== 'book';
+    const isBooking = action === 'book';
+    dialog.querySelector('#dialog-title').textContent = isBooking ? booking.title : booking.callTitle;
+    dialog.querySelector('#dialog-desc').textContent = isBooking ? booking.description : booking.callDescription;
+    dialog.querySelector('#message').hidden = !isBooking;
+    dialog.querySelector('#open-whatsapp').hidden = !isBooking;
     dialog.showModal();
   });
   dialog.querySelectorAll('.dialog-close,.dialog-x').forEach(control =>
@@ -299,6 +348,26 @@
     }
   });
   if (location.hash) document.getElementById(location.hash.slice(1))?.scrollIntoView();
+
+  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  if (!reducedMotion.matches && 'IntersectionObserver' in window) {
+    const reveal = new IntersectionObserver((entries, observer) => {
+      for (const { target, isIntersecting } of entries) {
+        if (!isIntersecting) continue;
+        observer.unobserve(target);
+        if (!reducedMotion.matches) {
+          target.animate([
+            { opacity: .78, transform: 'translateY(8px)' },
+            { opacity: 1, transform: 'none' }
+          ], { duration: 280, easing: 'ease-out' });
+        }
+      }
+    }, { rootMargin: '0px 0px -24px', threshold: 0.05 });
+    document.querySelectorAll('.section, .about-care, .timeline, .language-block, .staff-card, .cta')
+      .forEach(element => {
+        if (element.getBoundingClientRect().top >= innerHeight) reveal.observe(element);
+      });
+  }
 })().catch(error => {
   console.error(error);
 });
